@@ -50,6 +50,29 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        right-reset {
+            bindings = <&bootloader>;
+            key-positions = <10 11>;
+        };
+
+        left-reset {
+            bindings = <&bootloader>;
+            key-positions = <0 1>;
+        };
+    };
+
+    macros {
+        wife: wife {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp I &kp F &kp E &kp I &kp S &kp LS(Y) &kp I &kp N &kp G &kp H &kp U &kp I &kp LS(L) &kp I>;
+            label = "WIFE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -86,10 +109,10 @@
         function_layer {
             label = "FUN";
             bindings = <
-&none   &kp F1  &kp F2   &kp F3   &kp F4   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F5  &kp F6   &kp F7   &kp F8   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F9  &kp F10  &kp F11  &kp F12  &none              &none  &none  &none  &none  &none  &none
-&trans  &trans  &trans   &trans   &trans              &trans  &mo 3                              &trans
+&none   &kp F1  &kp F2   &kp F3       &kp F4   &none              &none  &none     &kp UP_ARROW    &none      &none  &none
+&none   &kp F5  &kp F6   &kp F7       &kp F8   &none              &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none
+&none   &kp F9  &kp F10  &kp F11      &kp F12  &none              &none  &none     &none           &none      &none  &none
+&trans  &trans  &trans   &kp LG(TAB)  &trans              &trans  &mo 3                                              &wife
             >;
         };
 
