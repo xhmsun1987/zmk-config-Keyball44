@@ -36,15 +36,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - NUM
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - LEFT WIN
   - SCROLL
   - SYM
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:keyboard-tab$$
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
