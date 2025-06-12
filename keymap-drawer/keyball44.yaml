@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-control$$
   - NUM
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
@@ -44,7 +44,7 @@ layers:
   - SCROLL
   - SYM
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-option$$
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
